@@ -103,6 +103,25 @@ h2 {
   border: 1px solid #e0e0e0;
 }
 
+.cover-full {
+  margin: 2rem 0 1.5rem;
+}
+
+.cover-full img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #e0e0e0;
+}
+
+.cover-full figcaption {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 0.6rem;
+  font-style: italic;
+}
+
 /* Note italic */
 .note { font-style: italic; color: #555; }
 
