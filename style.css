@@ -1,0 +1,259 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 18px; }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #111;
+  background: #fcfcfc;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: 85ch;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid #111;
+  padding-bottom: 0.5rem;
+  margin-bottom: 4rem;
+}
+
+.nav-brand {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.875rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #111;
+  font-size: 0.875rem;
+  padding: 0.1em 0.2em;
+}
+
+nav a:hover {
+  background: #111;
+  color: #fcfcfc;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Meta / mono */
+.meta {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Hero */
+#about { margin-bottom: 3rem; }
+
+.hero-row {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  margin: 2rem 0;
+}
+
+.hero-row p { flex: 1; }
+
+.cover-figure {
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.cover-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #e0e0e0;
+}
+
+/* Note italic */
+.note { font-style: italic; color: #555; }
+
+p + p { margin-top: 1rem; }
+
+/* Resources */
+#resources { margin-bottom: 4rem; }
+
+.resource-list {
+  list-style: none;
+  border-top: 1px solid #eee;
+}
+
+.resource-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid #eee;
+  padding: 0.9rem 0;
+}
+
+.resource-list a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #111;
+}
+
+.resource-list a:hover { text-decoration: underline; }
+
+.resource-tag {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Chapters */
+#chapters { margin-bottom: 4rem; }
+
+.chapter-list {
+  list-style: none;
+  border-top: 1px solid #eee;
+}
+
+.chapter-list li { border-bottom: 1px solid #eee; }
+
+details { padding: 0.9rem 0; }
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+summary::-webkit-details-marker { display: none; }
+
+.ch-title { font-weight: 500; }
+
+.ch-num {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8rem;
+  color: #888;
+  margin-left: 1rem;
+  flex-shrink: 0;
+}
+
+.ch-body {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.ch-summary {
+  flex: 1;
+  color: #444;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.ch-figure {
+  flex-shrink: 0;
+  width: 170px;
+}
+
+.ch-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #e0e0e0;
+}
+
+figcaption {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.72rem;
+  color: #aaa;
+  margin-top: 0.4rem;
+}
+
+/* Author */
+#author { margin-bottom: 4rem; }
+
+.btn-row { margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+
+.btn-primary {
+  display: inline-block;
+  background: #111;
+  color: #fcfcfc;
+  padding: 0.55rem 1.3rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.01em;
+}
+
+.btn-primary:hover { background: #333; }
+
+.btn-outline {
+  display: inline-block;
+  border: 1px solid #111;
+  color: #111;
+  padding: 0.55rem 1.3rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.btn-outline:hover { background: #111; color: #fcfcfc; }
+
+/* Footer */
+footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+  font-size: 0.75rem;
+  color: #aaa;
+  line-height: 1.7;
+}
+
+footer a { color: #aaa; }
+footer a:hover { color: #111; }
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 { font-size: 1.6rem; }
+  .hero-row { flex-direction: column; }
+  .cover-figure { width: 100%; max-width: 220px; }
+  .ch-body { flex-direction: column; }
+  .ch-figure { width: 100%; max-width: 220px; }
+  nav ul { gap: 1rem; }
+}
